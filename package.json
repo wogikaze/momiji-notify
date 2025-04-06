@@ -1,0 +1,29 @@
+{
+  "name": "momiji-notify",
+  "version": "1.0.0",
+  "description": "momiji notification to discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wogikaze/momiji-notify.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "wogikaze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wogikaze/momiji-notify/issues"
+  },
+  "homepage": "https://github.com/wogikaze/momiji-notify#readme",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "fast-xml-parser": "^5.2.0",
+    "forever": "^4.0.3",
+    "xmldom": "^0.6.0"
+  }
+}
