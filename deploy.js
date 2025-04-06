@@ -20,7 +20,6 @@ function regist_commands(cmdNames) {
                 // Routes.applicationCommands(client_id),
                 Routes.applicationGuildCommands(client_id, server_id),
                 { body: commands },
-                // { body: [] }
             );
             console.log(`${cmdNames}が登録されました！`);
         } catch (error) {

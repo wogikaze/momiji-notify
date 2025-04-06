@@ -1,5 +1,6 @@
 const { Client, Events, GatewayIntentBits, Partials } = require('discord.js');
 const { token, commands } = require('./config.json');
+const startWatcher = require('./commands/watcher');
 const client = new Client({
     intents: [
         // GatewayIntentBits.MessageContent,
@@ -16,8 +17,10 @@ client.once(Events.ClientReady, c => {
 });
 
 
-client.once("ready", () => {
+client.once("ready", async () => {
     console.log(files.map(f => f.data.name))
+
+    await startWatcher(client);
 })
 client.on(Events.InteractionCreate, async interaction => {
 
